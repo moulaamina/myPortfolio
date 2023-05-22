@@ -1,0 +1,23 @@
+
+.container{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;  
+    margin-left: auto;
+    margin-right: auto;
+    @include devices(xs){
+        max-width: $col-xs;
+    }
+    @include devices(sm){
+        max-width: $col-sm;
+    }
+    @include devices(md){
+        max-width: $col-md;
+    }
+    @include devices(lg){
+        max-width: $col-lg;
+    }
+    @include devices(xl){
+        max-width: $col-xl;
+    }
+}

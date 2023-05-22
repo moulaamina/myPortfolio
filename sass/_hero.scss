@@ -1,0 +1,117 @@
+.hero {
+    position: relative;
+
+
+    .container {
+        position: relative;
+        height: 100vh;
+        position: relative;
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .links{
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            &::before{
+                position: absolute;
+                content: "";
+                height: 80%;
+                border: 1px solid #fff;
+                top: 100%;
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                height: 80%;
+                border: 1px solid #fff;
+                bottom: 100%;
+            }
+                
+                li{
+                    margin: 12px 0;
+                    a{
+                        color: #fff;
+                        font-size: 36px;
+                    }
+                
+            }
+
+            @include max-w(lg){
+                display: none;
+            }
+        }
+    }
+
+    h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 1.8;
+        padding: 10px 0;
+
+        @include max-w(sm){
+            font-size: 40px;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.6;
+        font-weight: 800;
+        @include max-w(sm){
+            font-size: 25px;
+        }
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 1.6;
+        font-weight: normal;
+        padding-top: 20px;
+        color: #ADB8C7;
+        max-width: 700px;
+        @include max-w(sm){
+            font-size: 20px;
+        }
+    }
+
+    .name {
+        background: linear-gradient(to top,
+                hsl(297, 68%, 62%),
+                hsl(204, 56%, 52%));
+
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 16px 32px;
+        background-color: #7F5AF0;
+        border-radius: 95px;
+        -webkit-border-radius: 95px;
+        -moz-border-radius: 95px;
+        -ms-border-radius: 95px;
+        -o-border-radius: 95px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 90px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .fa-arrow-down{
+        font-size: 30px;
+        color: #9d80f49c;
+
+        
+    }
+}

@@ -1,0 +1,64 @@
+// Layout //
+// The designs were created to the following widths:
+//
+//- Mobile: 375px
+//- Desktop: 1440px
+//
+
+
+// Colors //
+
+// Primary
+$background: #16161A;
+
+
+// Neutral
+
+
+// Socials colors
+$facebook: #1877F2;
+$instagram: #E4405F;
+$twitter: #1DA1F2;
+
+// media + container
+$xs: 376px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1024px;
+$xxl: 1200px;
+
+$media: (
+    xs: $xs, //--max-width 376px
+    sm: $sm, //--min-width...
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+    xxl: $xxl
+);
+
+$col-xs:320px; 
+$col-sm: 560px;  // ()
+$col-md: 740px;  // ()
+$col-lg: 970px;  // ()
+$col-xl: 1100px; // ()
+
+$col-media: (
+    col-xs: $col-xs,
+    col-sm: $col-sm, 
+    col-md: $col-md, 
+    col-lg: $col-lg,
+    col-xl: $col-xl,
+);
+
+// shadow
+
+
+// grid
+
+$grid_cols :12;
+@for $i from 1  through 12{
+    .col-#{$i}{
+        width: percentage($i / $grid_cols);
+    }
+}

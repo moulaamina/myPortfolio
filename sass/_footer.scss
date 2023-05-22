@@ -1,0 +1,45 @@
+footer{
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+
+        li{
+            a{
+                color: #fff;
+                font-size: 28px;
+                padding:0 12px;
+            }
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: calc(50% - 100px);
+            border: 1px solid #fff;
+            top: 50%;
+            left: 0;
+        }
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: calc(50% - 100px);
+            border: 1px solid #fff;
+            top: 50%;
+            right: 0;
+        }
+
+    }
+
+    .foot{
+        color:#fff;
+        padding-bottom: 20px;
+    }
+}

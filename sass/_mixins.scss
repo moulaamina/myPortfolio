@@ -1,0 +1,39 @@
+// Media Queries Mixins
+
+@mixin devices ($point) {
+    @each $points, $size in $media {
+        @if $point==$points {
+            @media (min-width: $size) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin max-w ($point) {
+    @each $points, $size in $media {
+        @if $point==$points {
+            @media (max-width: $size) { //(max-width: calc($size - 1px)) 
+                @content;
+            }
+        }
+    }
+}
+
+// media + container
+
+@mixin container ($point , $p) {
+    @each $points, $size in $media {
+        @if $point==$points {
+            @media (min-width: $size) {
+                @each $col-md, $col-size in $col-media {
+                    @if $p==$col-md {
+                            max-width: $col-size;
+                            @content;
+                    }
+                }
+                @content;
+            }
+        }
+    }
+}
