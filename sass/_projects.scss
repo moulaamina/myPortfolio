@@ -4,7 +4,9 @@
   h2 {
     font-size: 50px;
     font-weight: 700;
-    background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -497,11 +497,11 @@ header #logo img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#424b54, #424b54), linear-gradient(137.48deg, #eed7c5 10%, #FE53BB 45%, #8F51EA 67%, #bcf4de 87%);
   z-index: 1;
   /**/
-  background: transparent;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background: rgba(81, 81, 81, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .nameDiv {
@@ -568,9 +568,10 @@ header #logo img {
   padding: 40px 0;
 }
 .myProjects h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
-  background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+  background: #14213d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -582,15 +583,17 @@ header #logo img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: space-around;
-  grid-gap: 25px;
+  grid-gap: 30px;
 }
 .myProjects .project {
-  border-radius: 40px 0 40px 0;
-  -webkit-border-radius: 40px 0 40px 0;
-  -moz-border-radius: 40px 0 40px 0;
-  -ms-border-radius: 40px 0 40px 0;
-  -o-border-radius: 40px 0 40px 0;
-  box-shadow: rgba(149, 146, 146, 0.129) 0px 3px 8px, rgba(251, 251, 251, 0.068) 0px 2px 6px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background: rgba(81, 81, 81, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .myProjects .project .project-desc {
   line-height: 1.8;
@@ -598,12 +601,13 @@ header #logo img {
   padding-bottom: 20px;
 }
 .myProjects .project .project-desc h3 {
-  font-size: 28px;
-  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  color: #14213d;
   padding-bottom: 5px;
 }
 .myProjects .project .project-desc p {
-  color: #afbbcb;
+  color: #eef0eb;
   padding-bottom: 10px;
 }
 .myProjects .project .project-desc .links {
@@ -613,41 +617,48 @@ header #logo img {
   align-self: flex-end;
 }
 .myProjects .project .project-desc .links .btn {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   cursor: pointer;
   text-transform: uppercase;
 }
 .myProjects .project .project-desc .links .btn-preview {
-  color: #ba4d9b;
+  color: #a4133c;
   font-family: inherit;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  /*
   position: relative;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
-}
-.myProjects .project .project-desc .links .btn-preview:focus, .myProjects .project .project-desc .links .btn-preview:hover {
-  color: #ee75cc;
-}
-.myProjects .project .project-desc .links .btn-preview:focus:after, .myProjects .project .project-desc .links .btn-preview:hover:after {
-  width: 100%;
-  left: 0%;
-}
-.myProjects .project .project-desc .links .btn-preview:after {
-  content: "";
-  pointer-events: none;
-  bottom: -3px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #ee75cc;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
+  text-decoration: double;
+
+  &:focus,
+  &:hover {
+      color: #ee75cc;
+  }
+  &:focus:after,
+  &:hover:after {
+      width: 100%;
+      left: 0%;
+  }
+  &:after {
+      content: "";
+      pointer-events: none;
+      bottom: -3px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #ee75cc;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+  }*/
 }
 .myProjects .project .project-desc .links .btn-view {
-  color: #648fe6;
+  color: #13293d;
   font-family: inherit;
   position: relative;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -656,13 +667,13 @@ header #logo img {
 }
 .myProjects img {
   width: 100%;
-  border-radius: 40px 0px 0 0;
-  -webkit-border-radius: 40px 0px 0 0;
-  -moz-border-radius: 40px 0px 0 0;
-  -ms-border-radius: 40px 0px 0 0;
-  -o-border-radius: 40px 0px 0 0;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: 260px;
+  max-width: 100%;
+  border-radius: 30px 30px 0 0;
+  -webkit-border-radius: 30px 30px 0 0;
+  -moz-border-radius: 30px 30px 0 0;
+  -ms-border-radius: 30px 30px 0 0;
+  -o-border-radius: 30px 30px 0 0;
+  height: 230px;
 }
 
 .projects {
@@ -671,7 +682,8 @@ header #logo img {
 .projects h2 {
   font-size: 50px;
   font-weight: 700;
-  background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+  background: #23074d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;

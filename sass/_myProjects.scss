@@ -2,9 +2,11 @@
     padding: 40px 0;
 
     h2 {
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 700;
-        background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+        background: #14213d;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #457b9d, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -17,31 +19,35 @@
         display: grid;
         grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
         justify-content: space-around;
-        grid-gap: 25px;
+        grid-gap: 30px;
     }
 
 
     .project{
-        border-radius: 40px 0 40px 0;
-        -webkit-border-radius: 40px 0 40px 0;
-        -moz-border-radius: 40px 0 40px 0;
-        -ms-border-radius: 40px 0 40px 0;
-        -o-border-radius: 40px 0 40px 0;
-        box-shadow: rgba(149, 146, 146, 0.129) 0px 3px 8px, rgba(251, 251, 251, 0.068) 0px 2px 6px;
-    
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        background: rgba(81, 81, 81, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        
         .project-desc{
             line-height: 1.8;
             padding: 16px;
             padding-bottom: 20px;
 
             h3{
-                font-size: 28px;
-                color: #fff;
+                font-size: 26px;
+                font-weight: 800;
+                color: #14213d;
                 padding-bottom: 5px;
             }
 
             p{
-                color: #afbbcb;
+                color: #eef0eb;
                 padding-bottom: 10px;
             }
 
@@ -52,19 +58,23 @@
                 align-self: flex-end;
 
                 .btn{
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 800;
                     cursor: pointer;
                     text-transform: uppercase;
                 }
 
                 .btn-preview{
-                        color: #ba4d9b;
+                        color: #a4133c;
                         font-family: inherit;
+                        text-decoration: underline 2px;
+
+                        /*
                         position: relative;
                         transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
                         transition-duration: 400ms;
                         transition-property: color;
+                        text-decoration: double;
 
                         &:focus,
                         &:hover {
@@ -87,11 +97,11 @@
                             transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
                             transition-duration: 400ms;
                             transition-property: width, left;
-                        }
+                        }*/
                 }
 
                 .btn-view{
-                    color: #648fe6;
+                    color: #13293d;
                         font-family: inherit;
                         position: relative;
                         transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -104,13 +114,13 @@
 
     img {
         width: 100%;
-        border-radius: 40px 0px 0 0;
-        -webkit-border-radius: 40px 0px 0 0;
-        -moz-border-radius: 40px 0px 0 0;
-        -ms-border-radius: 40px 0px 0 0;
-        -o-border-radius: 40px 0px 0 0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        height: 260px;
+        max-width: 100%;
+        border-radius: 30px 30px 0 0;
+        -webkit-border-radius: 30px 30px 0 0;
+        -moz-border-radius: 30px 30px 0 0;
+        -ms-border-radius: 30px 30px 0 0;
+        -o-border-radius: 30px 30px 0 0;
+        height: 230px;
 }
 
 }
