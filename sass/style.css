@@ -54,7 +54,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url(../images/tlg11.png);
+  background: url(../images/v3.jpg);
   background-size: 100% 100%;
 }
 
@@ -259,7 +259,7 @@ header #logo img {
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
-  background-image: linear-gradient(#424b54, #424b54), linear-gradient(137.48deg, #eed7c5 10%, #FE53BB 45%, #8F51EA 67%, #bcf4de 87%);
+  background-image: linear-gradient(#426d98, #46719c), linear-gradient(137.48deg, #eed7c5 10%, #04234c 45%, #9d79d3 67%, #bfdbd0 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   margin-top: 48px;
@@ -299,11 +299,11 @@ header #logo img {
 }
 
 .circle:nth-of-type(1) {
-  background: rgba(254, 156, 215, 0.636);
+  background: rgba(232, 205, 221, 0.636);
 }
 
 .circle:nth-of-type(2) {
-  background: rgba(151, 86, 249, 0.704);
+  background: rgba(122, 171, 217, 0.704);
 }
 
 .bn:hover #container-stars {
@@ -570,8 +570,8 @@ header #logo img {
 .myProjects h2 {
   font-size: 60px;
   font-weight: 700;
-  background: #14213d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #b6c8ef; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #b4d0e2, #f4f6fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -616,6 +616,7 @@ header #logo img {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
+  align-items: center;
 }
 .myProjects .project .project-desc .links .btn {
   font-size: 16px;
@@ -624,39 +625,46 @@ header #logo img {
   text-transform: uppercase;
 }
 .myProjects .project .project-desc .links .btn-preview {
-  color: #457b9d;
+  color: #eef0eb;
+  background-color: #4792c0;
   font-family: inherit;
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
-  /*
-  position: relative;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-  text-decoration: double;
-
-  &:focus,
-  &:hover {
-      color: #ee75cc;
-  }
-  &:focus:after,
-  &:hover:after {
-      width: 100%;
-      left: 0%;
-  }
-  &:after {
-      content: "";
-      pointer-events: none;
-      bottom: -3px;
-      left: 50%;
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      background-color: #ee75cc;
-      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-      transition-duration: 400ms;
-      transition-property: width, left;
-  }*/
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  /*position: relative;
+                          transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                          transition-duration: 400ms;
+                          transition-property: color;
+                          text-decoration: double;
+                          &:;
+                          focus,&:hover ;
+                          -webkit-border-radius: 25px;
+                          -moz-border-radius: 25px;
+                          -ms-border-radius: 25px;
+                          -o-border-radius: 25px;
+  {
+                              color: #ee75cc;
+                          }
+                          &:focus:after,
+                          &:hover:after {
+                              width: 100%;
+                              left: 0%;
+                          }
+                          &:after {
+                              content: "";
+                              pointer-events: none;
+                              bottom: -3px;
+                              left: 50%;
+                              position: absolute;
+                              width: 0%;
+                              height: 2px;
+                              background-color: #ee75cc;
+                              transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                              transition-duration: 400ms;
+                              transition-property: width, left;
+                          }*/
 }
 .myProjects .project .project-desc .links .btn-view {
   color: #fff;
@@ -890,11 +898,6 @@ header #logo img {
 }
 .contact > div > div h3 {
   font-size: 28px;
-  background: #14213d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   line-height: 1.8;
   color: #011936;
 }
@@ -913,7 +916,7 @@ header #logo img {
   line-height: 1.6;
   padding: 20px 0;
 }
-.contact > div > div span {
+.contact > div > div span, .contact > div > div h2 {
   display: block;
   font-size: 22px;
   padding: 10px 0;
@@ -921,17 +924,22 @@ header #logo img {
   color: #011936;
 }
 @media (max-width: 576px) {
-  .contact > div > div span {
+  .contact > div > div span, .contact > div > div h2 {
     font-size: 18px;
   }
 }
-.contact > div > div span i {
+.contact > div > div span i, .contact > div > div h2 i {
   margin-right: 8px;
 }
 .contact h2 {
   font-size: 60px;
   font-weight: 700;
   color: #fff;
+  background: #b6c8ef; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #b4d0e2, #f4f6fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   line-height: 1.8;
 }
@@ -941,15 +949,16 @@ header #logo img {
   }
 }
 .contact h2 span {
-  background: #14213d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #b6c8ef; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #b4d0e2, #f4f6fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .contact .form {
   padding: 40px;
-  /* From https://css.glass */
+  /*Fromhttps:;
+  //css.glass*/
   background-color: rgba(20, 33, 61, 0.0823529412);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -957,11 +966,11 @@ header #logo img {
   -webkit-backdrop-filter: blur(0.7px);
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 0p1x;
+  -webkit-border-radius: 0p1x;
+  -moz-border-radius: 0p1x;
+  -ms-border-radius: 0p1x;
+  -o-border-radius: 0p1x;
   text-align: center;
   position: relative;
   display: flex;

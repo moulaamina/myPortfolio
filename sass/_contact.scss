@@ -24,11 +24,6 @@
 
       h3 {
         font-size: 28px;
-        background: #14213d;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #457b9d, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         line-height: 1.8;
         color: #011936;
   
@@ -49,7 +44,7 @@
         padding: 20px 0;
       }
 
-      span {
+      span,h2 {
         display: block;
         font-size: 22px;
         padding: 10px 0;
@@ -66,16 +61,26 @@
   }
 
   h2 {
+    
     font-size: 60px;
     font-weight: 700;
     color: #fff;
+
+    background: #b6c8ef;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #e2eef6, #fbfbfb);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #b4d0e2, #f4f6fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
     @include max-w(sm) {
       font-size: 40px;
     }
     span {
-      background: #14213d;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #457b9d, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #b6c8ef;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #e2eef6, #fbfbfb);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #b4d0e2, #f4f6fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -86,26 +91,26 @@
 
   .form {
     padding: 40px;
-    /* From https://css.glass */
-    background-color: #14213d15;
+    /*Fromhttps:;
+    //css.glass*/background-color: #14213d15;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.7px);
     -webkit-backdrop-filter: blur(0.7px);
     width: fit-content;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 0p1x;
+    -webkit-border-radius: 0p1x;
+    -moz-border-radius: 0p1x;
+    -ms-border-radius: 0p1x;
+    -o-border-radius: 0p1x;
     text-align: center;
     position: relative;
     display: flex;
     place-content: center;
     place-items: center;
     overflow: hidden;
-
-    &::before {
+    &::before
+{
       content: '';
       position: absolute;
       width: 70%;
