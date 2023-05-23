@@ -25,11 +25,13 @@
       h3 {
         font-size: 28px;
         background: #14213d;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #60bdf6, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #75c6f8, #14213d); 
+        background: -webkit-linear-gradient(to top, #457b9d, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-clip: text;
         -webkit-text-fill-color: transparent;
         line-height: 1.8;
+        color: #011936;
+  
       }
 
       h4 {
@@ -72,8 +74,8 @@
     }
     span {
       background: #14213d;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #60bdf6, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #75c6f8, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to top, #457b9d, #14213d);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #457b9d, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
