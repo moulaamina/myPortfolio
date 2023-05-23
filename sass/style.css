@@ -586,11 +586,11 @@ header #logo img {
   grid-gap: 30px;
 }
 .myProjects .project {
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  border-radius: 30px 30px 0 0;
+  -webkit-border-radius: 30px 30px 0 0;
+  -moz-border-radius: 30px 30px 0 0;
+  -ms-border-radius: 30px 30px 0 0;
+  -o-border-radius: 30px 30px 0 0;
   background: rgba(81, 81, 81, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -601,7 +601,7 @@ header #logo img {
   padding-bottom: 20px;
 }
 .myProjects .project .project-desc h3 {
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 800;
   color: #14213d;
   padding-bottom: 5px;
@@ -609,6 +609,7 @@ header #logo img {
 .myProjects .project .project-desc p {
   color: #eef0eb;
   padding-bottom: 10px;
+  font-size: 16px;
 }
 .myProjects .project .project-desc .links {
   margin-top: 10px;
@@ -888,8 +889,9 @@ header #logo img {
   justify-content: center;
 }
 .contact > div > div h3 {
-  font-size: 24px;
-  background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+  font-size: 28px;
+  background: #14213d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #75c6f8, #14213d);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -905,7 +907,7 @@ header #logo img {
   }
 }
 .contact > div > div p {
-  color: #94a1b2;
+  color: #eef0eb;
   max-width: 600px;
   line-height: 1.6;
   padding: 20px 0;
@@ -915,6 +917,7 @@ header #logo img {
   font-size: 22px;
   padding: 10px 0;
   font-weight: 600;
+  color: #011936;
 }
 @media (max-width: 576px) {
   .contact > div > div span {
@@ -925,7 +928,7 @@ header #logo img {
   margin-right: 8px;
 }
 .contact h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -937,7 +940,8 @@ header #logo img {
   }
 }
 .contact h2 span {
-  background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+  background: #14213d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #75c6f8, #14213d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -945,12 +949,11 @@ header #logo img {
 .contact .form {
   padding: 40px;
   /* From https://css.glass */
-  background: rgba(81, 81, 81, 0.068);
+  background-color: rgba(20, 33, 61, 0.0823529412);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0.7px);
   -webkit-backdrop-filter: blur(0.7px);
-  border: 1px solid rgba(81, 81, 81, 0.3);
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
@@ -969,7 +972,7 @@ header #logo img {
   content: "";
   position: absolute;
   width: 70%;
-  background-image: linear-gradient(180deg, rgba(0, 204, 255, 0.379), rgba(255, 48, 255, 0.467));
+  background-image: linear-gradient(180deg, #94d0f5, rgba(248, 174, 248, 0.752));
   height: 130%;
   animation: rotBGimg 4s linear infinite;
   transition: all 0.3s linear;
@@ -990,7 +993,7 @@ header #logo img {
 .contact .form::after {
   content: "";
   position: absolute;
-  background: #07182e;
+  background: #011936;
   inset: 5px;
   border-radius: 15px;
 }
@@ -1000,14 +1003,14 @@ header #logo img {
 .contact .form h5 {
   font-size: 32px;
   line-height: 1.8;
-  background: linear-gradient(to top, hsl(297, 68%, 62%), hsl(204, 56%, 52%));
+  background: linear-gradient(to top, #eef0eb, #4792c0);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .contact .form p {
   text-align: center;
-  color: #fff;
+  color: #a6b3c5;
   padding-bottom: 30px;
 }
 .contact .form input,
@@ -1046,7 +1049,7 @@ header #logo img {
 .contact .form a {
   text-align: center;
   display: block;
-  background-color: rgba(157, 128, 244, 0.6117647059);
+  background-color: #4792c0;
   color: #fff;
   font-weight: bold;
   border: none;
