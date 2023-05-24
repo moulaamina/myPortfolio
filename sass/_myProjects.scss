@@ -70,42 +70,9 @@
                         color: #eef0eb;
                         background-color: #4792c0;
                         font-family: inherit;
-                        text-decoration: underline 2px;
                         border: none;
                         padding: 8px 20px;
                         border-radius: 25px;
-                        /*position: relative;
-                        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                        transition-duration: 400ms;
-                        transition-property: color;
-                        text-decoration: double;
-                        &:;
-                        focus,&:hover
-                        -webkit-border-radius: 25px;
-                        -moz-border-radius: 25px;
-                        -ms-border-radius: 25px;
-                        -o-border-radius: 25px;
-{
-                            color: #ee75cc;
-                        }
-                        &:focus:after,
-                        &:hover:after {
-                            width: 100%;
-                            left: 0%;
-                        }
-                        &:after {
-                            content: "";
-                            pointer-events: none;
-                            bottom: -3px;
-                            left: 50%;
-                            position: absolute;
-                            width: 0%;
-                            height: 2px;
-                            background-color: #ee75cc;
-                            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                            transition-duration: 400ms;
-                            transition-property: width, left;
-                        }*/
                 }
 
                 .btn-view{

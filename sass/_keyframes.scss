@@ -1,0 +1,80 @@
+/*hero*/
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*about*/
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*contact*/
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
